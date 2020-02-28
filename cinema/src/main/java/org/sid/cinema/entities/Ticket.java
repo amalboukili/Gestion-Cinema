@@ -24,8 +24,9 @@ public class Ticket {
     private double prix;
 
     // unique
-    @Column(unique = true)
-    private int codePayement;
+    @Column(unique = true, nullable = true)
+    private Integer codePayement;
+
     private boolean reserve;
 
     @ManyToOne
