@@ -24,7 +24,7 @@ public class Ticket {
     private double prix;
 
     // unique
-    @Column(unique = true, nullable = true)
+    @Column(unique = false, nullable = true)
     private Integer codePayement;
 
     private boolean reserve;
